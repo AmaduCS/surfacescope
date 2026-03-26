@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SurfaceScope Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; background: #0f172a; color: #e5e7eb; }
+    h1, h2 { color: #f8fafc; }
+    .card { background: #111827; border: 1px solid #334155; padding: 1rem; border-radius: 12px; margin-bottom: 1rem; }
+    .high { color: #fca5a5; }
+    .medium { color: #fde68a; }
+    .low { color: #93c5fd; }
+    .info { color: #cbd5e1; }
+    code { background: #1e293b; padding: 0.15rem 0.3rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>SurfaceScope Report</h1>
+  <p>Generated: {{ generated_at }}</p>
+  {% for record in records %}
+  <div class="card">
+    <h2>{{ record.target }}</h2>
+    <p>Severity: <strong class="{{ record.severity }}">{{ record.severity }}</strong></p>
+    <p>Score: <strong>{{ record.score }}</strong></p>
+    <p>Resolved IPs: <code>{{ record.resolved_ips|join(', ') if record.resolved_ips else 'n/a' }}</code></p>
+    <p>URL: <code>{{ record.http.url or 'n/a' }}</code></p>
+    <p>Open ports: <code>{% if record.ports %}{% for port in record.ports %}{{ port.port }}{% if not loop.last %}, {% endif %}{% endfor %}{% else %}none{% endif %}</code></p>
+    <p>Findings:</p>
+    <ul>
+      {% if record.findings %}
+        {% for finding in record.findings %}
+        <li>{{ finding }}</li>
+        {% endfor %}
+      {% else %}
+        <li>No notable findings</li>
+      {% endif %}
+    </ul>
+  </div>
+  {% endfor %}
+</body>
+</html>
