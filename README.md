@@ -54,6 +54,16 @@ SurfaceScope includes:
 
 ---
 
+## Screenshots
+
+### Demo CLI output
+
+![SurfaceScope demo CLI output](docs/screenshots/demo-terminal.png)
+
+### Generated HTML report
+
+![SurfaceScope HTML report](docs/screenshots/report-html.png)
+
 ## Why this project stands out
 
 Compared with a basic recon or scanning script, SurfaceScope is designed as a more complete workflow.
