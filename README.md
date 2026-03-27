@@ -2,7 +2,7 @@
 
 **SurfaceScope** is a Python-based CLI tool for **authorized** attack-surface inventory, web fingerprinting, lightweight exposure scoring, and report generation.
 
-I built this project to strengthen my hands-on skills in cybersecurity, Python automation, service discovery, HTTP/TLS analysis, and security reporting. It is designed for portfolio use, internal asset discovery, lab environments, and defensive security workflows.
+I built this project alongside my university coursework and personal cybersecurity learning to develop more practical experience in Python automation, service discovery, HTTP/TLS analysis, and security reporting. It is designed for lab environments, internal asset discovery, defensive security workflows, and hands-on technical learning.
 
 SurfaceScope does **not** include exploitation, payloads, or attack chaining. Its purpose is to help identify what an internet-facing asset is exposing, enrich the findings with useful technical context, and generate structured outputs for triage and documentation.
 
@@ -10,7 +10,9 @@ SurfaceScope does **not** include exploitation, payloads, or attack chaining. It
 
 ## Why I built this
 
-I wanted to create a practical security engineering project that combines:
+I built SurfaceScope as part of my broader hands-on development in cybersecurity alongside my university modules and other technical projects.
+
+I wanted to create something practical that combines:
 
 - Python development
 - CLI design
@@ -19,21 +21,21 @@ I wanted to create a practical security engineering project that combines:
 - basic exposure prioritization
 - structured reporting
 
-Rather than building a single-purpose script, I wanted to build a tool that reflects a real security workflow: collect, inspect, enrich, score, and report.
+Instead of building a single-purpose script, I wanted to work on a tool that reflects a more realistic security workflow: collect, inspect, enrich, score, and report.
 
 ---
 
-## What this project demonstrates
+## What I worked on in this project
 
-SurfaceScope highlights my ability to:
+Through SurfaceScope, I worked on:
 
-- build a modular Python CLI application
-- work with DNS, HTTP, and TLS data
-- automate external asset inspection workflows
-- turn raw findings into structured reports
-- design reusable security tooling
-- write tests for core logic
-- present technical results clearly
+- building a modular Python CLI application
+- handling DNS, HTTP, and TLS data
+- automating external asset inspection workflows
+- turning raw findings into structured reports
+- designing reusable security tooling
+- writing tests for core logic
+- presenting technical results clearly
 
 ---
 
@@ -64,6 +66,8 @@ SurfaceScope includes:
 
 ![SurfaceScope HTML report](docs/screenshots/report-html.png)
 
+---
+
 ## Why this project stands out
 
 Compared with a basic recon or scanning script, SurfaceScope is designed as a more complete workflow.
@@ -75,7 +79,7 @@ It does not just collect raw data. It:
 3. applies basic exposure scoring
 4. exports results in multiple useful formats
 
-This makes it more useful for defensive triage, reporting, and portfolio demonstration than a simple one-stage scanner.
+This makes it more useful for defensive triage, reporting, and practical technical learning than a simple one-stage scanner.
 
 ---
 
@@ -98,8 +102,7 @@ SurfaceScope is suitable for:
 - personal lab environments
 - owned domains and infrastructure
 - internal asset visibility exercises
-- portfolio demonstrations
-- safe demo runs for recruiters or interviewers
+- safe demonstrations in learning or testing environments
 - basic exposure review before deeper manual testing
 
 ---
