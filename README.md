@@ -121,3 +121,13 @@ This tool is intended for defensive, educational, and authorized security workfl
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .
+
+## Local setup and demo
+
+```bash
+cd SurfaceScope
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e .
+pytest
+surfacescope run --demo --output-dir outputs/demo
